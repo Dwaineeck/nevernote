@@ -1,0 +1,84 @@
+// Place all the styles related to the Docs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#docs{
+    .doc{
+        background: rgb(15, 201, 15);
+        width: 90%;
+        min-height: 100px;
+        margin: 1rem 1%;
+        padding: 1.5rem 2.5%;
+        float: left;
+        border-radius: 2.9rem;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        .title{
+            font-weight: bold;
+            color: white;
+            margin: 0;
+            left: 4.5%;
+            font-size: 3.0rem;
+            letter-spacing: 1px;
+        }
+        .date{
+            bottom: .25rem;
+            left: 5.5%;
+            color: white;
+            font-weight: lighter;
+            font-size: .75rem;
+            text-align: center;
+        }
+        .content{
+            bottom: .25rem;
+            left: 5.5%;
+            color: rgb(100, 70, 233);
+            font-weight: 600;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+    }
+}
+#doc_show, .simple_form{
+    background: rgb(15, 201, 15);
+    width: 90%;
+    min-height: 100px;
+    margin: 1rem 1%;
+    padding: 1.5rem 2.5%;
+    float: left;
+    border-radius: 2.9rem;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+a{
+    color: white;
+    text-decoration: none;
+
+}
+button{
+    background-color: rgb(15, 201, 15);
+    border-radius: 10%;
+    border-color: rgb(15, 201, 15);
+    padding: 10px 5px;
+}
+.header_inner{
+    display: inline-block;
+    a{
+        color: white;    
+    }
+    img{
+        width: 100px;
+        height: 100px;
+    }
+}
+nav{
+    display: inline-block;
+    a{
+        font-weight: bolder;  
+    }
+}
+.description{
+    span{
+        color: white;
+        padding: 20rem 0 20rem 0;
+    }
+}

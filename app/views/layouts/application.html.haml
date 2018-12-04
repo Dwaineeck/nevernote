@@ -1,25 +1,29 @@
 !!!
 %html
 %head
-  %title FileCabinet | Your Life's Work!
+  %title NeverNote | Always You!
   = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
   = javascript_include_tag 'application', 'data-turbolinks-track' => true
   = csrf_meta_tags
+  
 
 %body
-  %header
+  .navbar.navbar-light.bg-light
     .header_inner
-      = link_to "FileCabinet", root_path, id: "logo"
+      = link_to image_tag("/assets/Nevernote.png"), root_path
+    %nav
+      - if user_signed_in?
+        %button= link_to "New Note", new_doc_path
+        |
+        %button= link_to "Sign Out", destroy_user_session_path, method: :delete
 
-      %nav
-        - if user_signed_in?
-          = link_to "Create Doc", new_doc_path
-          = link_to "Sign Out", destroy_user_session_path, method: :delete
-
-        - else 
-          = link_to "Log In", new_user_session_path
-    
-  %p.notice= notice
-  %p.alert= alert
+      - else 
+        %button= link_to "Log In", new_user_session_path
+        %span.or or
+        %button= link_to "Sign Up", new_user_registration_path
+  .nav
+    %span.notice= notice
+    %span.alert= alert
 
   = yield
+

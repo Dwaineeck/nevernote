@@ -1,9 +1,10 @@
-<h2>Sign up</h2>
+<h2>Sign up for <img src="/assets/Nevernote.png" width="100px" height="100px">
+ </h2>
 
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
+  <div class="form-inputs form-group">
     <%= f.input :email,
                 required: true,
                 autofocus: true ,
@@ -18,8 +19,9 @@
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
+    <%= f.button :submit, "Lets Get Started!" %>
   </div>
+  <%= render "devise/shared/links" %>
 <% end %>
 
-<%= render "devise/shared/links" %>
+

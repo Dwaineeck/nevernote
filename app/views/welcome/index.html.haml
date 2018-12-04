@@ -1,18 +1,43 @@
 #banner
     .banner_content
-        %h1 File Cabinet
-        %p Your life's work. Organized, always.
-        %button=link_to "Enter", new_user_registration_path
-
+        %h1 Nevernote
+        %p Never get disorganized again.
+        -# %button=link_to "Sign In", new_user_session_path
+        -# %span or
+        -# %button= link_to "Sign Up", new_user_registration_path
+%br/
 #callouts
     .callout_inner
         .wrapper
             .callout
-                %h2 Organize
-                %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                %br/
+                %h2 Our Purpose
+                %p We all know we need to take control of our lives. 
+                %p So here is your chance to get control, let your day be won, not done.
+    .images
+        = link_to image_tag("/assets/set.png"), "https://www.google.com"
+        = link_to image_tag("/assets/do.png")
+        = link_to image_tag("/assets/befree.png")
+#footer.footer-distributed  
+    .footer-left
+        %p.footer-links
+            = link_to image_tag("/assets/Nevernote.png"), root_path
+            %a= link_to "Home", root_path
+            |
+            %a= link_to "Sign Up", new_user_registration_path
+            |
+            %a(href="/")= link_to "Sign In", new_user_session_path
+        %p.footer-company-name
+            Nevernote &copy; 2018
+    .footer-center
+        %div
+        %p Dallas, Tx, 75211
+        %div
+        %p 469-510-5196
+        %div
+        %a= link_to "support@nevernote.com"
+    .footer-right 
 
-#bottom_cta
-    .wrapper
-        %h2 Go Ahead!
-        %br
-        %button= link_to "Join Now", new_user_registration_path
+        %p.footer-company-about
+            %span About the Company
+            %p.green Get organized, with Nevernote.
