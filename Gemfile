@@ -29,7 +29,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'devise', '~> 4.5'
 gem 'haml', '~> 5.0', '>= 5.0.4'
-gem 'simple_form', '~> 4.1'
+gem 'simple_form', '~> 5.0'
 gem 'bootstrap'
 gem 'jquery-rails'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
